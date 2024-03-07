@@ -1,0 +1,3 @@
+# vitest-environment-uniapp
+
+WIP
