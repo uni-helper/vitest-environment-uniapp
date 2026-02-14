@@ -1,8 +1,8 @@
 <a href="https://uni-helper.js.org/vitest-environment-uniapp"><img src="./banner.svg" alt="banner" width="100%"/></a>
 
 <a href="https://github.com/uni-helper/vitest-environment-uniapp/stargazers"><img src="https://img.shields.io/github/stars/uni-helper/vitest-environment-uniapp?colorA=005947&colorB=eee&style=for-the-badge"></a>
-<a href="https://www.npmjs.com/package/flippedround/vitest-environment-uniapp"><img src="https://img.shields.io/npm/dm/flippedround/vitest-environment-uniapp?colorA=005947&colorB=eee&style=for-the-badge"></a>
-<a href="https://www.npmjs.com/package/flippedround/vitest-environment-uniapp"><img src="https://img.shields.io/npm/v/flippedround/vitest-environment-uniapp?colorA=005947&colorB=eee&style=for-the-badge"></a>
+<a href="https://www.npmjs.com/package/flippedround/vitest-environment-uniapp"><img src="https://img.shields.io/npm/dm/vitest-environment-uniapp?colorA=005947&colorB=eee&style=for-the-badge"></a>
+<a href="https://www.npmjs.com/package/flippedround/vitest-environment-uniapp"><img src="https://img.shields.io/npm/v/vitest-environment-uniapp?colorA=005947&colorB=eee&style=for-the-badge"></a>
 <br/>
 
 # 由 [uni-helper](https://uni-helper.js.org) 封装的uni命令
