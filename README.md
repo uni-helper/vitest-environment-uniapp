@@ -5,7 +5,12 @@
 <a href="https://www.npmjs.com/package/flippedround/vitest-environment-uniapp"><img src="https://img.shields.io/npm/v/vitest-environment-uniapp?colorA=005947&colorB=eee&style=for-the-badge"></a>
 <br/>
 
-# 由 [uni-helper](https://uni-helper.js.org) 封装的uni命令
+# 让 Vitest 能在 uni-app 项目中运行 e2e 测试的工具。
+
+## 已知问题
+
+- h5 平台下，无法获取启动状态导致超时。
+- environmentOptions 参数同 [uni-app 官方文档](https://uniapp.dcloud.net.cn/worktile/auto/quick-start.html#jestconfigjs) , 但官网长久为更新，导致参数与实际不符。
 
 ## 安装
 
