@@ -23,9 +23,8 @@ pnpm i -D vitest-environment-uniapp
 ```bash
 pnpm test
 ```
-
+> package.json
 ```json
-// package.json
 {
   "scripts": {
     "test": "vitest"
@@ -33,8 +32,8 @@ pnpm test
 }
 ```
 
+> vitest.config.ts
 ```ts
-// unh.config.ts
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
@@ -54,4 +53,14 @@ export default defineConfig({
     },
   },
 })
+```
+> tsconfig.json
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "vitest-environment-uniapp/types"
+    ]
+  }
+}
 ```
