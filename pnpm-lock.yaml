@@ -21,9 +21,6 @@ importers:
       '@antfu/ni':
         specifier: ^28.0.0
         version: 28.0.0
-      '@antfu/utils':
-        specifier: ^9.3.0
-        version: 9.3.0
       '@types/node':
         specifier: ^25.0.1
         version: 25.0.1
@@ -42,9 +39,6 @@ importers:
       simple-git-hooks:
         specifier: ^2.13.1
         version: 2.13.1
-      tinyexec:
-        specifier: ^1.0.2
-        version: 1.0.2
       tsdown:
         specifier: ^0.17.3
         version: 0.17.3(publint@0.3.16)(synckit@0.11.11)(typescript@5.9.3)
@@ -57,9 +51,6 @@ importers:
       vitest:
         specifier: ^4.0.15
         version: 4.0.15(@types/node@25.0.1)(jiti@2.6.1)(jsdom@16.7.0(bufferutil@4.1.0))(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2)
-      vitest-package-exports:
-        specifier: ^0.1.1
-        version: 0.1.1
 
   playground:
     dependencies:
@@ -247,9 +238,6 @@ packages:
     resolution: {integrity: sha512-GhP4MRAitPXH4pCG+XMHUnAUb9H+Jg/tC4XjD/siB3qwDjgVilKj4uoJP92K2zj6Av6lzsEvZosxRXpLt4IYGA==}
     engines: {node: '>=20'}
     hasBin: true
-
-  '@antfu/utils@9.3.0':
-    resolution: {integrity: sha512-9hFT4RauhcUzqOE4f1+frMKLZrgNog5b06I7VmZQV1BkvwvqrbC8EBZf3L1eEL2AKb6rNKjER0sEvJiSP1FXEA==}
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -6350,9 +6338,6 @@ packages:
       yaml:
         optional: true
 
-  vitest-package-exports@0.1.1:
-    resolution: {integrity: sha512-rXgU5noxaaMA5VJXgVPhXRzPiQ1WFmWwgo8dQFPg9j/yFM028scO0IAylFHVI8XMRevhozEt1usa6RQYQY26lg==}
-
   vitest@4.0.15:
     resolution: {integrity: sha512-n1RxDp8UJm6N0IbJLQo+yzLZ2sQCDyl1o0LeugbPWf8+8Fttp29GghsQBjYJVmWq3gBFfe9Hs1spR44vovn2wA==}
     engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
@@ -6682,8 +6667,6 @@ snapshots:
       package-manager-detector: 1.6.0
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
-
-  '@antfu/utils@9.3.0': {}
 
   '@babel/code-frame@7.24.7':
     dependencies:
@@ -14290,11 +14273,6 @@ snapshots:
       terser: 5.46.0
       tsx: 4.21.0
       yaml: 2.8.2
-
-  vitest-package-exports@0.1.1:
-    dependencies:
-      find-up-simple: 1.0.1
-      pathe: 2.0.3
 
   vitest@4.0.15(@types/node@25.0.1)(jiti@2.6.1)(jsdom@16.7.0(bufferutil@4.1.0))(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2):
     dependencies:
