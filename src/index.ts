@@ -17,7 +17,6 @@ import { Automator, initUni } from '@dcloudio/uni-automator'
 interface Global {
   program: {
     teardown: () => Promise<void>
-    remote: (enable: boolean) => Promise<void>
   }
   uni: unknown
 }
@@ -49,7 +48,7 @@ class UniAppEnvironment implements Environment {
         })
 
         if (options?.devtools?.remote) {
-          await global.program.remote(true)
+          await program.remote(true)
         }
 
         const uni = initUni(program)
