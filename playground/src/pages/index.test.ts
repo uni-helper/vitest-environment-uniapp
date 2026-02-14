@@ -8,8 +8,8 @@ describe('test title', () => {
   })
 
   it('check page title', async () => {
-    const el = await page.$('.title') // page.$(selector: string) 选择器(id、class、元素选择器)
+    const el = await page.$('.uni-helper-logo__label')
     const titleText = await el.text()
-    expect(titleText).toEqual('Hello')
+    expect(titleText).toEqual('uni-helper')
   })
 })

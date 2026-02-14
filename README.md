@@ -5,7 +5,7 @@
 <a href="https://www.npmjs.com/package/flippedround/vitest-environment-uniapp"><img src="https://img.shields.io/npm/v/vitest-environment-uniapp?colorA=005947&colorB=eee&style=for-the-badge"></a>
 <br/>
 
-# 让 Vitest 能在 uni-app 项目中运行 e2e 测试的工具。
+# Vitest 的 uni-app e2e 测试环境
 
 ## 已知问题
 
