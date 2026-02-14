@@ -15,7 +15,6 @@ pnpm i -D vitest-environment-uniapp
 
 ## 使用
 
-
 ```bash
 pnpm test
 ```
@@ -24,7 +23,7 @@ pnpm test
 // package.json
 {
   "scripts": {
-    "test": "vitest",
+    "test": "vitest"
   }
 }
 ```
@@ -50,5 +49,4 @@ export default defineConfig({
     },
   },
 })
-
 ```

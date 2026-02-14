@@ -3,9 +3,7 @@ import { beforeAll, describe, expect, it } from 'vitest'
 describe('test title', () => {
   let page: Page
   beforeAll(async () => {
-    console.log('beforeAll')
     page = await program.currentPage()
-    console.log('page', page)
     await page.waitFor(3000)
   })
 
