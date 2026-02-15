@@ -15,5 +15,5 @@ declare module '@dcloudio/uni-automator' {
     launch(options?: UniInitOptions): Promise<program>
   }
 
-  export function initUni(program: unknown): Promise<void>
+  export function initUni(program: unknown): Promise<unknown>
 }

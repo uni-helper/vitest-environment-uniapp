@@ -26,6 +26,7 @@ const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 class UniAppEnvironment implements Environment {
   name = 'uni-app'
   viteEnvironment = 'ssr'
+  private TIME_TEARDOWN = 3000
   private _store: Record<string, any> = {
     init: false,
   }
@@ -38,8 +39,6 @@ class UniAppEnvironment implements Environment {
     }
     else {
       try {
-        this._store.init = true
-
         const platform = options?.platform || process.env.UNI_PLATFORM
         const automator = new Automator()
         const program = await automator.launch({
@@ -54,8 +53,10 @@ class UniAppEnvironment implements Environment {
         const uni = initUni(program)
         this._store.uni = uni
         this._store.program = program
+        this._store.init = true
       }
       catch (error) {
+        this._store.init = false
         console.error('测试环境初始化失败', error)
         throw error
       }
@@ -65,11 +66,11 @@ class UniAppEnvironment implements Environment {
     global.program = this._store.program
 
     return {
-      async teardown(global: Global) {
+      teardown: async (global: Global) => {
         const { program } = global
         if (program && typeof program.teardown === 'function') {
           await program.teardown()
-          await sleep(3000)
+          await sleep(this.TIME_TEARDOWN)
         }
       },
     }
