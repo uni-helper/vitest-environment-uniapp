@@ -10,6 +10,7 @@
 > [!IMPORTANT]
 > 该项目依赖 `@dcloudio/uni-automator` 必须安装
 > h5 平台下，需要安装 `playwright` ; 但目前无法获取启动状态导致超时
+>
 > environmentOptions 参数同 [uni-app 官方文档](https://uniapp.dcloud.net.cn/worktile/auto/quick-start.html#jestconfigjs) , 但官网长久未更新，导致参数与实际不符
 
 ## 安装
