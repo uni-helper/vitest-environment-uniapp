@@ -1,7 +1,7 @@
 {
   "name": "vitest-environment-uniapp",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "packageManager": "pnpm@10.25.0",
   "description": "Vitest environment for UniApp",
   "author": "FliPPeDround <flippedround@qq.com>",
