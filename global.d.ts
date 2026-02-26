@@ -1,3 +1,39 @@
+import 'vitest/node'
+
+declare module 'vitest/node' {
+  interface EnvironmentOptions {
+    /**
+     * uniapp 测试环境选项，详情请参考[uni-app 自动化测试](https://uniapp.dcloud.net.cn/worktile/auto/quick-start.html#jestconfigjs)
+     */
+    uniapp?: {
+      /**
+       * H5 测试选项
+       */
+      'h5': {
+        [x: string]: unknown
+      }
+      /**
+       * app-plus 测试选项, 需要安装 HBuilderX
+       */
+      'app-plus': {
+        [x: string]: unknown
+      }
+      /**
+       * 微信小程序测试选项
+       */
+      'mp-weixin': {
+        [x: string]: unknown
+      }
+      /**
+       * 支付宝小程序测试选项
+       */
+      'mp-alipay': {
+        [x: string]: unknown
+      }
+    }
+  }
+}
+
 declare global {
   /**
    * Element 模块提供了控制页面元素的方法
@@ -442,4 +478,5 @@ declare global {
     exposeFunction: (name: string, bindingFunction: (() => unknown)) => Promise<void>
   }
 }
+
 export {}

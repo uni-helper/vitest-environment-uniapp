@@ -40,16 +40,12 @@ export default defineConfig({
   test: {
     environment: 'uniapp',
     environmentOptions: {
-      compile: true,
-      platform: 'h5', // 测试平台
-      projectPath: './src', // manifest.json 所在目录
-      port: 5121,
-      h5: {
-        url: 'http://localhost:5180/', // 改成你的 H5 服务器地址
-        options: {
-          headless: false, // 是否无头模式
-        },
-      },
+      uniapp: {
+        compile: true,
+        platform: 'mp-weixin',
+        projectPath: './src',
+        port: 5121,
+      }
     },
   },
 })

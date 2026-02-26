@@ -31,7 +31,8 @@ class UniAppEnvironment implements Environment {
     init: false,
   }
 
-  async setup(global: Global, options: UniInitOptions) {
+  async setup(global: Global, options: { uniapp?: UniInitOptions }) {
+    const uniappOptions = options?.uniapp
     if (this._store.init) {
       if (!global.program) {
         throw new Error('测试环境初始化失败，请重新运行测试')
@@ -39,14 +40,14 @@ class UniAppEnvironment implements Environment {
     }
     else {
       try {
-        const platform = options?.platform || process.env.UNI_PLATFORM
+        const platform = uniappOptions?.platform || process.env.UNI_PLATFORM
         const automator = new Automator()
         const program = await automator.launch({
-          ...options,
+          ...uniappOptions,
           platform,
         })
 
-        if (options?.devtools?.remote) {
+        if (uniappOptions?.devtools?.remote) {
           await program.remote(true)
         }
 

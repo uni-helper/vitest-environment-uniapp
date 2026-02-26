@@ -13,5 +13,4 @@ export default defineConfig({
     // https://uni-helper.js.org/plugin-uni
     Uni(),
   ],
-
 })
