@@ -1,36 +1,30 @@
 import 'vitest/node'
 
+type RecordUnknown = Record<string, unknown>
+
 declare module 'vitest/node' {
   interface EnvironmentOptions {
     /**
      * uniapp 测试环境选项，详情请参考[uni-app 自动化测试](https://uniapp.dcloud.net.cn/worktile/auto/quick-start.html#jestconfigjs)
      */
-    uniapp?: {
+    uniapp?: Partial<RecordUnknown & {
       /**
        * H5 测试选项
        */
-      'h5': {
-        [x: string]: unknown
-      }
+      'h5': RecordUnknown
       /**
        * app-plus 测试选项, 需要安装 HBuilderX
        */
-      'app-plus': {
-        [x: string]: unknown
-      }
+      'app-plus': RecordUnknown
       /**
        * 微信小程序测试选项
        */
-      'mp-weixin': {
-        [x: string]: unknown
-      }
+      'mp-weixin': RecordUnknown
       /**
-       * 支付宝小程序测试选项
+       * 百度小程序测试选项
        */
-      'mp-alipay': {
-        [x: string]: unknown
-      }
-    }
+      'mp-baidu': RecordUnknown
+    }>
   }
 }
 
@@ -478,5 +472,3 @@ declare global {
     exposeFunction: (name: string, bindingFunction: (() => unknown)) => Promise<void>
   }
 }
-
-export {}
